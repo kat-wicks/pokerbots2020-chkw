@@ -93,7 +93,7 @@ class Player(Bot):
         #    max_cost = max_raise - my_pip  # the cost of a maximum bet/raise
         if CheckAction in legal_actions:  # check-call
             return CheckAction()
-        return CallAction()
+        return FoldAction()
 
 
 if __name__ == '__main__':
